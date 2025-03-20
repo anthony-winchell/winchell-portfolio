@@ -1,0 +1,301 @@
+*{
+    font-family: Georgia, 'Times New Roman', Times, serif
+}
+
+
+body, header, footer{
+    background-color: rgb(253, 249, 242);
+    color: rgb(51, 51, 51);
+}
+hr{
+    border: 0;
+    background-color: black;
+    height: 3px;
+    margin-top: 30px
+}
+
+main, footer{
+    max-width: 1000px;
+    margin: 20px auto 0 auto;
+}
+
+body{
+    margin: 0 auto;
+    padding: 20px;
+}
+
+
+
+/*Mobile work*/ 
+@media screen and (max-width: 600px){
+    nav a {
+        font-size: 15px
+    }
+    h1{
+        font-size: 36px;
+    }
+    .experience ul li{
+        font-size: 14px;
+    }
+
+
+
+}
+
+
+/* HEADER */
+
+nav > ul{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    list-style: none;
+    border: 2px solid black;
+    padding: 10px;
+    border-radius: 7px;
+    font-size: 18px;
+    box-shadow: .5px .5px 5px;
+}
+a{
+    color: rgb(31, 138, 159);
+}
+a:hover{
+    color: rgb(107, 82, 122);
+}
+
+#date-container{
+    position: absolute;
+    margin: 0;
+    top: -3px;
+    right: -1px;
+    padding: 0 3px;
+    border: 3px solid rgba(79, 79, 79, 0.608);
+    box-shadow: 2px 2px 4px rgba(116, 115, 115, 0.608);
+    border-radius: 0 0 0 12px;
+    font-size: 14px;
+    background-color: rgb(233, 250, 247);
+}
+h1{
+    text-align: center;
+    margin: 40px 0 5px 0
+}
+
+
+
+
+
+/*ARTICLE*/
+
+article{
+    border-bottom: 1.5px solid red;
+    border-top: 1.5px solid red;
+    margin: 30px 5px;
+    text-align: center;
+}
+
+/*EXPERIENCE*/
+
+.experience ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border: 2px solid black;
+    margin: 2px 0;
+    height: 13vw;
+    min-height: fit-content;
+}
+.experience ul li{
+    width: 100%;
+    padding: 15px;
+    margin: auto;
+}
+.experience-desc{
+    list-style: none;
+}
+.underline{
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+}
+
+/*TECHNICAL*/
+.technical h2{
+    margin-bottom: 30px;
+}
+.technical table{
+    margin: 0 auto;
+}
+
+table{
+    border: 2px solid black;
+    border-radius: 5px;
+    height: 200px;
+}
+caption{
+    font-size: large;
+    font-weight: bold;
+}
+
+td{
+    border: 1px solid black;
+    text-align: center;
+}
+.check{
+
+    font-size: 45px;
+}
+
+/*FOOTER*/
+#links{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+footer{
+    padding-bottom: 20px;
+}
+
+footer h3{
+    text-align: center;
+    margin-top: 0;
+}
+footer p{
+    font-size: 14px;
+}
+
+
+
+                /*COVER LETTER PAGE*/
+
+#introduction {
+    padding: 20px;
+}
+
+#introduction p{
+    text-indent: 40px;
+    font-size: 18px;
+    padding: 10px;
+}
+
+#quote{
+    padding: 20px;
+}
+
+cite{
+    display: block;
+    font-size: 18px;
+    text-align: right;
+    padding-right: 20px;}
+#introduction span{
+    font-weight: normal;
+    padding-left: 10px;
+}
+
+
+
+
+/*GOALS PAGE*/
+#goals-main{
+    padding: 0 25px;
+    font-size: 18px;
+}
+
+#goals-intro p{
+    text-indent: 40px;
+    padding: 10px;
+}
+#goals-intro h2{
+    text-align: center;
+}
+#goals-intro video{
+    display: block;
+    margin: 0 auto;
+    max-width: 800px;
+    min-width: 400px;
+    width: 80%;
+}
+img{
+    display: block;
+    margin: 0 auto;
+    max-width: 800px;
+    min-width: 400px;
+    width: 80%;
+}
+
+
+
+
+#contact-form{
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    }
+#contact-form > p{
+    margin-top: 0;
+}
+
+#contact-form > form{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas: 
+    "firstName firstName"
+    "lastName lastName"
+    "companyName companyName"
+    "email email"
+    "phone phone"
+    "message message"
+    "contact-type contact-type"
+    "time-radio time-radio"
+    "submit submit";
+    gap:10px;
+    align-items: center;
+    border: 2px solid black;
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 2px 2px 5px;
+    max-width: 600px;
+    width: 75%;
+}
+#contact-form > form > input{
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid black;
+}
+#contact-form > form > textarea{
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid black;
+}
+
+#time-radio{
+    text-align: center;
+}
+
+#contact-type{
+    padding: 10px;
+    font-size: 18px;
+    border-radius: 5px;
+    border: 1px solid black;
+}
+#contact-form > form > input[type=submit]{
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid black;
+    grid-column: span 2;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color: rgb(1, 178, 1);
+    color: white;
+    box-shadow: 2px 2px 5px;
+}
+
+#audio-container{
+    display: flex;
+    justify-content: center;
+    padding: 15px 0 0;
+}
